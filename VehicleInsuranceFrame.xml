@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="VehicleInsuranceFrame">
+    <GuiElement profile="baseReference">
+        <GuiElement profile="fs25_menuContainer">
+            <GuiElement profile="fs25_menuHeaderPanel" position="-62px 92px">
+                <Bitmap profile="fs25_menuHeaderIconBg">
+                    <Text profile="vitHeaderMonogram" text="SV"/>
+                </Bitmap>
+                <Text profile="fs25_menuHeaderTitle" id="insuranceTitleText" text="SCHADENSVERSICHERUNG"/>
+                <RoundCorner profile="fs25_shopMoneyBoxBg"/>
+                <BoxLayout profile="fs25_shopMoneyBox">
+                    <Text profile="fs25_shopBalance" text="KONTOSTAND:"/>
+                    <Text profile="fs25_shopMoney" id="currentBalanceText"/>
+                </BoxLayout>
+            </GuiElement>
+            <BoxLayout profile="fs25_subCategorySelectorTabbedBox" id="subCategoryBox">
+                <Button profile="fs25_subCategorySelectorTabbedTab" id="subCategoryTabs[1]" text="FAHRZEUGE" onClick="onClickTabVehicles">
+                    <ThreePartBitmap profile="fs25_subCategorySelectorTabbedTabBg" name="background"/>
+                </Button>
+                <Button profile="fs25_subCategorySelectorTabbedTab" id="subCategoryTabs[2]" text="TARIFE" onClick="onClickTabTariffs">
+                    <ThreePartBitmap profile="fs25_subCategorySelectorTabbedTabBg" name="background"/>
+                </Button>
+            </BoxLayout>
+            <ThreePartBitmap profile="fs25_lineSeparatorTopHighlighted" position="-63px -57px" size="100% 2dp"/>
+            <MultiTextOption profile="fs25_subCategorySelectorTabbed" id="subCategoryPaging" position="0px -10px" onClick="onPagingChanged"/>
+        </GuiElement>
+    </GuiElement>
+</GUI>

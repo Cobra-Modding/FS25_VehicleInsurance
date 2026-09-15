@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<modDesc descVersion="111">
+    <author>Marcus (Cobra Modding)</author>
+    <version>1.0.0.0</version>
+
+    <title>
+		<de>Fahrzeug-Schadensversicherung</de>
+		<en>Vehicle Damage Insurance</en>
+	</title>
+
+    <description>
+		<de><![CDATA[Zusätzliche Schadensversicherung. Teilkasko erstattet 50 % der Reparatur- und Lackierkosten, Vollkasko 100 % der Reparatur- und Lackierkosten. Die normalen Fahrzeug-Unterhaltskosten des Spiels bleiben immer aktiv.]]></de>
+		<en><![CDATA[Additional damage insurance. Partial coverage reimburses 50% of repair and painting costs, while comprehensive coverage covers 100% of repair and painting costs. The game's standard vehicle maintenance costs remain active at all times.]]></en>
+	</description>
+
+    <iconFilename>icon_VehicleInsurance.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <extraSourceFiles>
+        <sourceFile filename="scripts/VehicleInsurance.lua"/>
+        <sourceFile filename="scripts/VehicleInsuranceNetwork.lua"/>
+        <sourceFile filename="scripts/VehicleInsuranceMenu.lua"/>
+    </extraSourceFiles>
+</modDesc>
